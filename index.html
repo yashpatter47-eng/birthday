@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Japleen ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<!-- ================= 3D GALAXY ================= -->
+
+<div id="galaxy">
+
+<div id="galaxyStars"></div>
+
+<div id="nebula"></div>
+
+<div id="planet"></div>
+
+</div>
+<div id="particles"></div>
+
+<!-- ================= LOADER ================= -->
+
+<section id="loader" class="screen">
+
+<div class="loaderBox">
+
+<h3>Searching...</h3>
+
+<h1 id="loadingText"></h1>
+
+<p>Please wait...</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= WELCOME ================= -->
+
+<section id="welcome" class="screen active">
+
+<div class="overlay"></div>
+
+<div class="content">
+
+<h3>Happy Birthday</h3>
+
+<h1>Japleen ❤️</h1>
+
+<p>
+
+Today isn't just another day...
+
+It's the day someone truly special came into this world.
+
+</p>
+
+<button id="startJourney">
+
+Start Journey ✨
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= QUESTION ================= -->
+
+<section id="question" class="screen">
+
+<div class="questionBox">
+
+<h1>
+
+💖 Sach Sach Batana... 😏
+
+</h1>
+
+<h2>
+
+Ab To Ek Kissi Banti Hai Na? 💋
+
+</h2>
+
+<div class="questionBtns">
+
+<button id="yesBtn">
+
+❤️ Haan ❤️
+
+</button>
+
+<button id="noBtn">
+
+💔 Nahi 💔
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PASSWORD ================= -->
+<section id="passwordHint" class="screen">
+
+<div class="passwordBox">
+
+<h1>💌 Password Hint</h1>
+
+<h2 class="hintPassword">
+
+Y ❤️ LEEN
+
+</h2>
+
+<p>
+
+Jo Dil Se Sochoge...
+<br><br>
+Wahi Password Hoga. ❤️
+
+</p>
+
+<button id="hintContinue">
+
+❤️ Continue ❤️
+
+</button>
+
+<br>
+
+<input
+
+id="passwordInput"
+
+type="password"
+
+placeholder="Enter Password">
+
+<br><br>
+
+<button id="passwordBtn">
+
+❤️ Continue ❤️
+
+</button>
+
+<p id="passwordError"></p>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= ACCESS GRANTED ================= -->
+
+<div id="accessGranted">
+
+    <div class="tickCircle">
+        ✅
+    </div>
+
+    <h1>
+        Access Granted ❤️
+    </h1>
+
+    <p>
+        Welcome Back, Japleen 💖
+    </p>
+
+</div>
+
+<!-- ================= LETTER ================= -->
+
+<section id="letter" class="screen">
+
+<div class="envelopeContainer">
+
+<div class="envelope" id="envelope">
+
+<div class="envelopeBack"></div>
+
+<div class="envelopeLetter" id="letterPaper">
+
+<h2>
+
+💌 Dear Japleen
+
+</h2>
+
+<p id="letterContent"></p>
+
+<button id="toGallery" style="display:none;">
+
+Continue ❤️
+
+</button>
+
+</div>
+
+<div class="envelopeFront"></div>
+
+<div class="envelopeTop" id="envelopeTop"></div>
+
+</div>
+
+<button id="openLetter">
+
+Open My Letter ❤️
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" class="screen">
+
+<h1>Meet the girl who stole my heart  ❤️</h1>
+
+<div class="slider">
+
+<button class="nav prev">&#10094;</button>
+
+<div class="slides">
+
+<img src="images/1.jpg" class="slide active">
+<img src="images/2.jpg" class="slide">
+<img src="images/3.jpg" class="slide">
+<img src="images/4.jpg" class="slide">
+<img src="images/5.jpg" class="slide">
+<img src="images/6.jpg" class="slide">
+<img src="images/7.jpg" class="slide">
+<img src="images/8.jpg" class="slide">
+<img src="images/9.jpg" class="slide">
+<img src="images/10.jpg" class="slide">
+<img src="images/11.jpg" class="slide">
+<img src="images/12.jpg" class="slide">
+<img src="images/13.jpg" class="slide">
+<img src="images/14.jpg" class="slide">
+
+</div>
+
+<button class="nav next">&#10095;</button>
+
+</div>
+<button id="toCake">
+
+Next Surprise 🎂
+
+</button>
+
+</section>
+
+<!-- ================= CAKE ================= -->
+
+<section id="cake" class="screen">
+
+<div class="cakeContainer">
+
+<h1>🎂 Make A Wish</h1>
+
+<p>
+
+Close your eyes...
+
+Make a beautiful wish...
+
+Then cut the cake.
+
+</p>
+
+<div class="cakeEmoji">
+
+🎂
+<div id="cakeEffects">
+
+    <div id="cakeFireworks"></div>
+
+    <div id="confettiContainer"></div>
+
+    <h1 id="birthdayText">
+        🎉 HAPPY BIRTHDAY JAPLEEN ❤️
+    </h1>
+
+    <button id="continueAfterCake">
+        Continue ❤️
+    </button>
+
+</div>
+
+</div>
+
+<button id="cutCake">
+
+Cut Cake ❤️
+
+</button>
+<div id="cakeCelebration" style="display:none;flex-direction:column;align-items:center;gap:20px;">
+
+    <h2>🎉 Happy Birthday Japleen ❤️ 🎉</h2>
+
+    <button id="continueAfterCake">
+        Continue ❤️
+    </button>
+
+</div>
+</div>
+
+</section>
+
+
+
+<!-- ================= FIREWORKS ================= -->
+
+<section id="fireworks" class="screen">
+
+<div class="fireworkContent">
+
+<h1>
+
+🎆 Happy Birthday 🎆
+
+</h1>
+
+<h2>
+
+Japleen Patter ❤️
+
+</h2>
+
+<p>
+
+May your smile shine forever.
+
+May every dream come true.
+
+</p>
+
+<button id="toYasleen">
+
+One Last Surprise ✨
+
+</button>
+
+</div>
+
+<div id="fireworkCanvas"></div>
+<div id="balloonContainer"></div>
+
+<div id="countdown">
+
+<h1 id="countNumber">3</h1>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= YASLEEN ================= -->
+
+<section id="yasleen" class="screen">
+
+<div class="yasleenBox">
+
+    <h3>Two Names.</h3>
+
+    <div id="nameContainer">
+
+       <div id="nameMerge">
+
+    <span id="name1">YASH</span>
+
+    <span id="plus">❤️</span>
+
+    <span id="name2">JAPLEEN</span>
+
+</div>
+
+<h1 id="yasleenAnimation" style="display:none;">
+    ❤️ YASLEEN ❤️
+</h1>
+
+    </div>
+
+    <button id="makeYasleen">
+        Create Yasleen ❤️
+    </button>
+
+    <div id="yasleenResult" style="display:none;">
+
+        <h1 id="finalName">
+            ❤️ YASLEEN ❤️
+        </h1>
+
+        <p>
+
+            Maybe...
+
+            Yasleen is not just two names.
+
+            It is a beautiful story written by fate.
+
+            Two hearts.
+
+            One name.
+
+            One beautiful feeling.
+
+            ❤️
+
+        </p>
+
+        <button id="toVoice" style="display:none;">
+            ❤️ Continue ❤️
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- ================= VOICE NOTE ================= -->
+
+<section id="voice" class="screen">
+
+    <div class="voiceCard">
+
+        <h1>
+            🎙 One Last Message
+        </h1>
+
+        <p>
+            I recorded something
+            only for you.
+            <br><br>
+            Whenever you miss this moment,
+            just press play.
+        </p>
+
+        <button id="playVoice">
+    ▶ Play Voice Note
+</button>
+
+<br><br>
+
+<button id="stopVoice">
+    ⏹ Stop Voice
+</button>
+
+<br><br>
+
+<button id="voiceNext">
+    ❤️ Continue ❤️
+</button>
+
+<audio id="voiceAudio">
+    <source src="voice/voice.mp3" type="audio/mpeg">
+</audio>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- Background Music -->
+
+<audio id="bgMusic" loop>
+
+<source src="music/song.mp3" type="audio/mpeg">
+
+</audio>
+
+
+
+<!-- Music Button -->
+
+<div id="musicBtn">
+
+🎵
+
+</div>
+<audio id="typingSound">
+<source src="music/type.mp3" type="audio/mpeg">
+</audio>
+<div id="musicBars"></div>
+<!-- ================= END PAGE ================= -->
+
+<section id="end" class="screen">
+
+<div class="endContainer">
+
+<h2>
+    ❤️ HAPPY BIRTHDAY ❤️
+</h2>
+
+<div id="movieEnding">
+
+<div id="credits">
+
+<div class="credit">✨ A Small Surprise...</div>
+
+<div class="credit">Made Especially For You ❤️</div>
+
+<div class="credit">YASH ❤️ JAPLEEN</div>
+
+<div class="credit">Every Smile Of Yours...</div>
+
+<div class="credit">Is Worth More Than A Thousand Stars ✨</div>
+
+<div class="credit">No Matter The Distance...</div>
+
+<div class="credit">You'll Always Have A Special Place In My Heart ❤️</div>
+
+<div class="credit">Thank You...</div>
+
+<div class="credit">For Every Beautiful Memory ❤️</div>
+
+<div class="credit">I Hope This Birthday...</div>
+
+<div class="credit">Brings You Endless Happiness ✨</div>
+
+<div class="credit">Keep Smiling 😊</div>
+
+<div class="credit">Keep Shining ✨</div>
+
+<div class="credit">Keep Being Amazing ❤️</div>
+
+<div class="credit">━━━━━━━━━━━━━━</div>
+
+<div class="credit huge">
+YASH ❤️ JAPLEEN
+</div>
+
+<div class="credit">━━━━━━━━━━━━━━</div>
+
+<div class="credit">Created With Love❤️ and Emotion ❤️ </div>
+
+<div class="credit">By</div>
+
+<div class="credit big">
+Your 4 Footiyaa ❤️
+</div>
+
+<div class="credit end">
+✨ THE END ✨
+</div>
+
+</div>
+
+</div>
+
+<button id="finalCelebrate">
+
+🎆 Celebrate Again 🎆
+
+</button>
+
+</div>
+
+</section>
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
